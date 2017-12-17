@@ -1,0 +1,350 @@
+  /*css重置*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+  }
+  
+  hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #DEDEDE;
+  }
+  
+  body {
+    background-color: #efefef;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  /*******************************/
+  
+  .topNav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .topNaviner {
+    padding: 0 16px;
+  }
+  
+  .topNav .topNaviner .logo {
+    font-size: 24px;
+    font-family: "Arial Black";
+  }
+  
+  .topNav .logo .rs {
+    color: #e6686a;
+    margin-right: 4px;
+  }
+  
+  .topNav .logo .card {
+    color: #9A9DA2;
+  }
+  
+  .topNav nav {
+    float: right;
+    font-size: 13px;
+    padding-top: 7px;
+  }
+  
+  .topNav nav ul li {
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+  
+  .topNav .topNaviner nav a {
+    font-size: 12px;
+    color: #b7b7b7;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+  }
+  
+  .topNav .topNaviner nav ul li a {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+  }
+  
+  .topNav .topNaviner nav a:hover {
+    border-bottom-color: #DC6465;
+  }
+  
+  .banner {
+    height: 515px;
+    background: url(../img/rs-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .banner .mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .usercard {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    margin-top: -340px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .picAndText {
+    padding: 45px;
+  }
+  
+  .usercard .portrait {
+    float: left;
+  }
+  
+  .usercard .text {
+    float: left;
+    margin-left: 79px;
+    width: 470px;
+  }
+  
+  .usercard .text .welcome {
+    background: #e8676b;
+    display: inline-block;
+    padding: 4px 16px;
+    color: white;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .usercard .text .welcome .triangle {
+    display: block;
+    border: 10px solid transparent;
+    width: 0px;
+    border-left-color: #e6686a;
+    border-top-width: 0px;
+    position: absolute;
+    left: 6px;
+    top: 95%;
+  }
+  
+  .usercard .text h1 {
+    margin-top: 28px;
+  }
+  
+  .usercard .text hr {
+    margin: 20px 0;
+  }
+  
+  .usercard li {
+    line-height: 30px;
+  }
+  
+  .usercard .profile-title {
+    padding-right: 100px;
+  }
+  
+  .usercard .profile-cont {
+    color: #9da0a7;
+  }
+  
+  .usercard>.media {
+    background: #E6686A;
+    text-align: center;
+  }
+  
+  .usercard a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    line-height: 30px;
+    padding: 10px 0;
+    margin: 10px 16px;
+  }
+  
+  .usercard .media a:hover {
+    background: #CF5D5F;
+  }
+  
+  .usercard svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+  }
+  
+  main .downloadResume-wrapper {
+    text-align: center;
+  }
+  
+  main .downloadResume {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #cdcfd1;
+    background: #efefef;
+    display: inline-block;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px 0;
+    transition: box-shadow 0.2s;
+  }
+  main .downloadResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2)
+  }
+  
+  main .selfintroduction {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.8;
+    font-family: "楷体"
+  }
+  
+  .skill,
+  .florilegium {
+    margin-top: 60px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .skill h2,
+  .florilegium h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  
+  .skill h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+  }
+  
+  .skill ol {
+    background: white;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+  }
+  
+  .skill li {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+  }
+  
+  .skill>ol>li:nth-child(even) {
+    float: right;
+  }
+  
+  .skill>ol>li .progressBar {
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+  }
+  
+  .skill>ol>li .progress {
+    height: 100%;
+    background: #E6686A;
+    width: 70%;
+    border-radius: 2px;
+  }
+  
+  .florilegium {
+    text-align: center;
+  }
+  
+  .florilegium>nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .florilegium>nav>ol {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .florilegium>nav>ol>li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .florilegium>nav>ol>li:first-child {
+    margin-left: 0;
+  }
+  
+  .florilegiumBar {
+    border-radius: 2px;
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+  }
+  
+  .florilegiumBar .bar-inner{
+    background: #E6686A;
+    border-radius:2px ;
+    height: 100%;
+    transition: all 0.3s;
+  }
+.florilegium>nav>.state-1 .bar-inner{
+  margin-left: 0;
+  width: 40px;
+}
+.florilegium>nav>.state-2 .bar-inner{
+  margin-left: 65px;
+  width: 50px;
+}
+.florilegium>nav>.state-3 .bar-inner{
+  margin-left: 140px;
+  width: 94px;
+}
+.florilegium .work{
+  position: relative;
+}
+.florilegium .work .workImgBig{
+  position: absolute;
+}
+.florilegium .work .workImgSmall{
+  position: absolute;
+}
