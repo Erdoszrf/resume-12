@@ -1,198 +1,204 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>简历</title>
-  <script src="//at.alicdn.com/t/font_510944_c36l3oaxsitfbt9.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
-    .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-</style>
-</head>
 
-<body>
-  <div class="topNav clearfix">
-    <div class="topNaviner">
-      <a class="logo" alt="logo">
-        <span class="rs">RS</span>
-        <span class="card">card</span>
-      </a>
-      <nav>
-        <ul class="clearfix">
-          <li>
-            <a href="#">关于</a>
-          </li>
-          <li>
-            <a href="#">技能</a>
-          </li>
-          <li>
-            <a href="#">作品</a>
-          </li>
-          <li>
-            <a href="#">博客</a>
-          </li>
-          <li>
-            <a href="#">日历</a>
-          </li>
-          <li>
-            <a href="#">联系方式</a>
-          </li>
-          <li>
-            <a href="#">其他</a>
-          </li>
-        </ul>
-      </nav>
+  <head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="loading" class="loadingIn active">
+      <div class="loading"></div>
     </div>
 
-  </div>
-  <div class="banner">
-    <div class="mask"></div>
-  </div>
-  <main>
-    <div class="usercard">
-      <div class="picAndText clearfix">
-        <div class="portrait">
-          <img src="img/avatar.jpg"alt="头像"width="299" height="347"/>
-        </div>
-        <div class="text">
-          <span class="welcome">Hello
-            <span class="triangle"></span>
-          </span>
-          <h1>张镕凡</h1>
-          <p>前端开发工程师</p>
-          <hr>
-          <ul class="profile-list">
-          	<li>
-          	  <strong class="profile-title">年龄</strong>
-          	  <span class="profile-cont">24</span>
-          	</li>
-          	<li>
-          	  <strong class="profile-title">城市</strong>
-              <span class="profile-cont">内蒙古</span>
-          	</li>
-          	<li>
-          	  <strong class="profile-title">邮箱</strong>
-              <span class="profile-cont">erdoszrf@qq.com</span>
-          	</li>
-          	<li>
-          	  <strong class="profile-title">手机</strong>
-              <span class="profile-cont">12345678909</span>
-          	</li>
+    <div class="topNav clearfix">
+      <div class="topNaviner">
+        <a class="logo" alt="logo">
+          <span class="rs">RS</span>
+          <span class="card">card</span>
+        </a>
+        <nav>
+          <ul class="clearfix">
+            <li>
+              <a href="#">关于</a>
+            </li>
+            <li>
+              <a href="#">技能</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+            <li>
+              <a href="#">日历</a>
+            </li>
+            <li>
+              <a href="#">联系方式</a>
+            </li>
+            <li>
+              <a href="#">其他</a>
+            </li>
           </ul>
+        </nav>
+      </div>
+
+    </div>
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
+    <main>
+      <div class="usercard">
+        <div class="picAndText clearfix">
+          <div class="portrait">
+            <img src="img/avatar.jpg" alt="头像" width="299" height="347" />
+          </div>
+          <div class="text">
+            <span class="welcome">Hello
+            <span class="triangle"></span>
+            </span>
+            <h1>张镕凡</h1>
+            <p>前端开发工程师</p>
+            <hr>
+            <ul class="profile-list">
+              <li>
+                <strong class="profile-title">年龄</strong>
+                <span class="profile-cont">24</span>
+              </li>
+              <li>
+                <strong class="profile-title">城市</strong>
+                <span class="profile-cont">内蒙古</span>
+              </li>
+              <li>
+                <strong class="profile-title">邮箱</strong>
+                <span class="profile-cont">erdoszrf@qq.com</span>
+              </li>
+              <li>
+                <strong class="profile-title">手机</strong>
+                <span class="profile-cont">12345678909</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="media">
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-QQ"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weixin"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-icongithub"></use>
+            </svg>
+          </a>
+        </footer>
+      </div>
+      <p class="downloadResume-wrapper">
+        <a href="#" class="downloadResume" target="_blank" download="">下载PDF简历</a>
+      </p>
+      <p class="selfintroduction">
+        张镕凡，应届毕业生，现在在学习WEB前端开发<br />技能：吃、喝、玩、乐
+      </p>
+    </main>
+    <section class="skill">
+      <h2>技能</h2>
+      <ol class="clearfix">
+        <li>
+          <h3>HTML&amp;CSS3</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 10%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 20%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>吃</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 30%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>喝</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 40%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>玩</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>乐</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="florilegium">
+      <h2>作品集</h2>
+      <nav>
+        <ol class="clearfix">
+          <li id="barall">全部</li>
+          <li id="barframe">框架</li>
+          <li id="barNative">原生JS&amp;CSS</li>
+        </ol>
+        <div id="flBar" class="florilegiumBar state-1">
+          <div class="bar-inner"></div>
+        </div>
+      </nav>
+      <script>
+        barall.onclick = function() {
+          flBar.className = 'florilegiumBar state-1'
+        }
+        barframe.onclick = function() {
+          flBar.className = 'florilegiumBar state-2'
+        }
+        barNative.onclick = function() {
+          flBar.className = 'florilegiumBar state-3'
+        }
+      </script>
+      <div class="work">
+        <div class="workImgBig" style="top: 0;left: 0;">
+          <img src="img/1.jpg" alt="图片1" />
+        </div>
+        <div class="workImgSmall" style="top: 312px;left: 647px;">
+          <img src="img/2.jpg" alt="图片2" />
+        </div>
+        <div class="workImgSmall" style="top:0;left: 647px;">
+          <img src="img/3.jpg" alt="图片3" />
         </div>
       </div>
-      <footer class="media">
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-weibo"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-QQ"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-weixin"></use>
-          </svg>
-         </a>
-         <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-icongithub"></use>
-          </svg>
-         </a>
-      </footer>
-    </div>
-    <p class="downloadResume-wrapper">
-      <a href="#" class="downloadResume" target="_blank" download="">下载PDF简历</a>
-    </p>
-    <p class="selfintroduction">
-      张镕凡，应届毕业生，现在在学习WEB前端开发<br />技能：吃、喝、玩、乐
-    </p>
-  </main>
-  <section class="skill">
-    <h2>技能</h2>
-    <ol class="clearfix">
-    	<li>
-    		<h3>HTML&amp;CSS3</h3>
-    		<div class="progressBar">
-    		  <div class="progress" style="width: 10%;"></div>
-    		</div>
-    	</li>
-    	<li>
-    		<h3>JavaScript</h3>
-    		<div class="progressBar">
-    		  <div class="progress" style="width: 20%;"></div>
-    		</div>
-    	</li>
-    	<li>
-    		<h3>吃</h3>
-    		<div class="progressBar">
-    		  <div class="progress" style="width: 30%;"></div>
-    		</div>
-    	</li>
-    	<li>
-    		<h3>喝</h3>
-    		<div class="progressBar">
-    		  <div class="progress" style="width: 40%;"></div>
-    		</div>
-    	</li>
-    	<li>
-    		<h3>玩</h3>
-    		<div class="progressBar">
-    		  <div class="progress" style="width: 50%;"></div>
-    		</div>
-    	</li>
-    	<li>
-    		<h3>乐</h3>
-    		<div class="progressBar">
-    		  <div class="progress" style="width: 60%;"></div>
-    		</div>
-    	</li>
-    </ol>
-  </section>
-  <section class="florilegium">
-    <h2>作品集</h2>
-    <nav>
-    	<ol class="clearfix">
-    		<li id="barall">全部</li>
-    		<li id="barframe">框架</li>
-    		<li id="barNative">原生JS&amp;CSS</li>
-    	</ol>
-    	<div id="flBar"class="florilegiumBar state-1">
-    	  <div class="bar-inner"></div>
-    	</div>
-    </nav>
-    <script>
-      
-      barall.onclick= function(){
-        flBar.className = 'florilegiumBar state-1'
-      }
-      barframe.onclick= function(){
-        flBar.className = 'florilegiumBar state-2'
-      }
-      barNative.onclick= function(){
-        flBar.className = 'florilegiumBar state-3'
-      }
-    
-    </script>
-    <div class="work">
-      <div class="workImgBig" style="top: 0;left: 0;">
-        <img src="img/1.jpg" alt="图片1" />
-      </div>
-      <div class="workImgSmall" style="top: 312px;left: 647px;">
-        <img src="img/2.jpg" alt="图片2" />
-      </div>
-      <div class="workImgSmall" style="top:0;left: 647px;">
-        <img src="img/3.jpg" alt="图片3" />
-      </div>
-    </div>
-  </section>
-</body>
+    </section>
+    <script src="//at.alicdn.com/t/font_510944_c36l3oaxsitfbt9.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+
 </html>
