@@ -21,7 +21,7 @@
       <div class="loading"></div>
     </div>
 
-    <div class="topNav clearfix">
+    <div id="topNav" class="topNav clearfix ">
       <div class="topNaviner">
         <a class="logo" alt="logo">
           <span class="rs">RS</span>
@@ -30,16 +30,26 @@
         <nav>
           <ul class="clearfix">
             <li>
-              <a href="#">关于</a>
+              <a href="#siteAbout">关于</a>
             </li>
             <li>
-              <a href="#">技能</a>
+              <a href="#siteSkills">技能</a>
             </li>
             <li>
-              <a href="#">作品</a>
+              <a href="#siteWorks">作品</a>
+              <ul class="submenu">
+                <li>作品1</li>
+                <li>作品2</li>
+                <li>作品3</li>
+              </ul>
             </li>
             <li>
               <a href="#">博客</a>
+              <ul class="submenu">
+                <li>博客1</li>
+                <li>博客2</li>
+                <li>博客3</li>
+              </ul>
             </li>
             <li>
               <a href="#">日历</a>
@@ -59,7 +69,7 @@
       <div class="mask"></div>
     </div>
     <main>
-      <div class="usercard">
+      <div data-x id="siteAbout" class="usercard">
         <div class="picAndText clearfix">
           <div class="portrait">
             <img src="img/avatar.jpg" alt="头像" width="299" height="347" />
@@ -121,9 +131,9 @@
         张镕凡，应届毕业生，现在在学习WEB前端开发<br />技能：吃、喝、玩、乐
       </p>
     </main>
-    <section class="skill">
+    <section data-x id="siteSkills" class="skill">
       <h2>技能</h2>
-      <ol class="clearfix">
+      <ol  class="clearfix">
         <li>
           <h3>HTML&amp;CSS3</h3>
           <div class="progressBar">
@@ -162,7 +172,7 @@
         </li>
       </ol>
     </section>
-    <section class="florilegium">
+    <section data-x class="florilegium"id="siteWorks" >
       <h2>作品集</h2>
       <nav>
         <ol class="clearfix">
@@ -197,13 +207,10 @@
         </div>
       </div>
     </section>
-    <script>
-      setTimeout(function(){
-  loading.classList.remove('active')
-},2000)
-    </script>
     <script src="//at.alicdn.com/t/font_510944_c36l3oaxsitfbt9.js"></script>
-
+    <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
+    <script type="text/javascript" src="js/main.js" ></script>
+    
   </body>
 
 </html>
