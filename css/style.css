@@ -13,6 +13,10 @@
   h6 {
     font-weight: normal;
   }
+  .swiper-container {
+    width: 400px;
+    height: 300px;
+}
 
   hr {
     height: 0;
@@ -465,8 +469,8 @@
 
   .message{
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 500px;
+
+    margin-bottom: 50px;
   }
   .message ol{
     background-color: white;
@@ -479,3 +483,12 @@
     text-align: left;
     height:30px;
   }
+.swiper-container{
+  margin-top: 40px;
+}
+.swiper-wrapper div img{
+     width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
       .icon {
@@ -133,7 +134,7 @@
     </main>
     <section data-x id="siteSkills" class="skill">
       <h2>技能</h2>
-      <ol  class="clearfix">
+      <ol class="clearfix">
         <li>
           <h3>HTML&amp;CSS3</h3>
           <div class="progressBar">
@@ -172,48 +173,48 @@
         </li>
       </ol>
     </section>
-    <section data-x class="florilegium"id="siteWorks" >
+    <section data-x class="florilegium" id="siteWorks">
       <h2>作品集</h2>
-      <nav>
-        <ol class="clearfix">
-          <li id="barall">全部</li>
-          <li id="barframe">框架</li>
-          <li id="barNative">原生JS&amp;CSS</li>
-        </ol>
-        <div id="flBar" class="florilegiumBar state-1">
-          <div class="bar-inner"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/lb1.png"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/lb2.png"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/lb3.png"/>
+          </div>
         </div>
-      </nav>
-      <script>
-        barall.onclick = function() {
-          flBar.className = 'florilegiumBar state-1'
-        }
-        barframe.onclick = function() {
-          flBar.className = 'florilegiumBar state-2'
-        }
-        barNative.onclick = function() {
-          flBar.className = 'florilegiumBar state-3'
-        }
-      </script>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+
+
 
       </div>
+      <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </section>
-    <section class="message">
-    <h2>留言</h2>
-    <ol class="messageList">
-    </ol>
-    <form id="xxx">
-      <label for="name">姓名：</label>
-      <input type="text" name="name" id="name" />
-      <label for="content">内容：</label>
-      <input type="text" name="content" id="content" />
-      <input type="submit" value="提交" />
-    </form>
+    <section data-x class="message">
+      <h2>留言</h2>
+      <ol class="messageList">
+      </ol>
+      <form id="xxx">
+        <label for="name">姓名：</label>
+        <input type="text" name="name" id="name" />
+        <label for="content">内容：</label>
+        <input type="text" name="content" id="content" />
+        <input type="submit" value="提交" />
+      </form>
     </section>
     <script src="//at.alicdn.com/t/font_510944_c36l3oaxsitfbt9.js"></script>
     <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
     <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
-    <script type="text/javascript" src="js/main.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 
 </html>

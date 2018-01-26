@@ -46,6 +46,7 @@ for(let i = 0; i < liTags.length; i++) {
 }
 
 let aTags = document.querySelectorAll('.topNav .topNaviner nav ul li a ')
+
 function animate(time) {
   requestAnimationFrame(animate);
   TWEEN.update(time);
@@ -84,37 +85,59 @@ for(let i = 0; i < aTags.length; i++) {
 }
 
 var APP_ID = 'tjLK1owHL4N1lFIArnImnrjN-gzGzoHsz';
-      var APP_KEY = '0pt05duTgpOfwrL2XI9RoS6L';
-      AV.init({
-        appId: APP_ID,
-        appKey: APP_KEY
-      });
-      var query = new AV.Query('Message');
-      var messageList = document.querySelector('.messageList')
-      var li = document.createElement('li')
-      query.find().then(function(Message) {
-        let array = Message.map(function(item) {
-          return item.attributes
-        })
-        array.forEach(function(item) {
-          let li = document.createElement('li')
-          li.innerText = item.name + ':' + item.content
-          messageList.appendChild(li)
-        })
-      }, function(error) {
-        // 异常处理
-      });
-      xxx.addEventListener('submit', function(e) {
-        e.preventDefault()
-        var TestObject = AV.Object.extend('Message');
-        var testObject = new TestObject();
-        var content = xxx.querySelector('input[name=content]').value
-        var name = xxx.querySelector('input[name=name]').value
-        let li = document.createElement('li')
-        li.innerText = name + ":" + content
-        messageList.appendChild(li)
-        testObject.save({
-          'name': name,
-          'content': content
-        })
-      })
+var APP_KEY = '0pt05duTgpOfwrL2XI9RoS6L';
+AV.init({
+  appId: APP_ID,
+  appKey: APP_KEY
+});
+var query = new AV.Query('Message');
+var messageList = document.querySelector('.messageList')
+var li = document.createElement('li')
+query.find().then(function(Message) {
+  let array = Message.map(function(item) {
+    return item.attributes
+  })
+  array.forEach(function(item) {
+    let li = document.createElement('li')
+    li.innerText = item.name + ':' + item.content
+    messageList.appendChild(li)
+  })
+}, function(error) {
+  // 异常处理
+});
+xxx.addEventListener('submit', function(e) {
+  e.preventDefault()
+  var TestObject = AV.Object.extend('Message');
+  var testObject = new TestObject();
+  var content = xxx.querySelector('input[name=content]').value
+  var name = xxx.querySelector('input[name=name]').value
+  let li = document.createElement('li')
+  li.innerText = name + ":" + content
+  messageList.appendChild(li)
+  testObject.save({
+    'name': name,
+    'content': content
+  })
+})
+window.onload = function(){
+   var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+}
